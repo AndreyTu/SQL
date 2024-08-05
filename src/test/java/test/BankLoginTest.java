@@ -1,6 +1,13 @@
+package test;
+
 import org.junit.jupiter.api.*;
+import data.DataHelper;
+import data.SQLHelper;
+import page.LoginPage;
 
 import static com.codeborne.selenide.Selenide.open;
+import static data.SQLHelper.cleanAuthCodes;
+import static data.SQLHelper.cleanDatabase;
 
 public class BankLoginTest {
     LoginPage loginPage;
