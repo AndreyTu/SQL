@@ -8,7 +8,8 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-public class SQLHelper {
+public class
+SQLHelper {
 
     private static final QueryRunner runner = new QueryRunner();
 

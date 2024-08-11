@@ -1,7 +1,7 @@
 version: '3.7'
 services:
   mysql:
-    image: mysql:8.0.18
+    image: mysql:8.0.34
     restart: always
     environment:
       - MYSQL_RANDOM_ROOT_PASSWORD=yes
@@ -11,4 +11,4 @@ services:
     ports:
       - '3306:3306'
     volumes:
-      - ./schema:/docker-entrypoint-initrd.d
+      - ./schema:/docker-entrypoint-initdb.d
